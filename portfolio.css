@@ -16,7 +16,7 @@
 }
 html{
     font-size: 62.5%;
-    overflow: hidden;
+    overflow: auto;
 }
 body{
     background: var(--bg-color);
@@ -350,113 +350,162 @@ span{
     font-size: 2.4rem;
     color: var(--second-bg-color);
 }
-@media (max-width:1200px){
-    html{
-        font-size: 55%;
-    }
-}
-@media (max-width:991px){
-    .header{
-        padding: 2rem 3%;
-    }
-    section{
-        padding: 10rem 3% 2rem;
-}
-.education{
-    padding-bottom: 7rem;
-}
-.portfolio{
-    padding-bottom: 7rem;
-}
-.contact{
-    min-height: auto;
-}
-.contact form .input-box input{
-    width: 100%;
-}
-.footer{
-    padding: 1rem 3%;
-    flex-direction: column-reverse;
-    
-}
-.footer p{
-    text-align: center;
-    margin-top: 0.5rem;
-}
-}
-@media (max-width: 768px){
-    #menu-icon{
-        display: block;
-    }
-    .navbar{
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 1rem 3%;
-        background: var(--bg-color);
-        border-top: .1rem solid rgba(0,0,0,.2);
-        box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
-        display: none;
-    }
-    .navbar.active{
-        display: block;
-    }
-    .navbar a{
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-    }
-    .home{
-        flex-direction: column;
-    }
-    .home-content h3{
-        font-size: 2.6rem;
-    }
-    .home-content h1{
-        font-size: 5rem;
-    }
-    .home-img img{
-        width: 70vw;
-        margin-top: 4rem;
-    }
-    .about{
-        flex-direction: column-reverse;
-    }
-    .about img{
-        width: 70vw;
-        margin-top: 4rem;
-    }
-    .education h2{
-        margin-bottom: 3rem;
-    }
-    .portfolio h2{
-        margin-bottom: 3rem;
-    }
-    .portfolio-container{
-        grid-template-columns: repeat(2,1fr);
-    }
-}
-@media (max-width: 617px){
-    .portfolio-container{
-        grid-template-columns: 1fr;
-    }
-}
-@media (max-width: 450px){
-    html{
-        font-size: 50%;
-    }
-}
-@media (max-width: 365px){
-    .home-img img{
-        width: 90vw;
-    }
-    .about-img img{
-        width: 90vw;
-    }
-    
+
+/* updated css by Ranjan prajapati */
+
+html, body {
+    overflow-x: hidden;
 }
 
+section, .header, .home, .about, .education-container, .portfolio-container, .contact form, .footer {
+    max-width: 100%;
+    overflow-x: visible;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*    rrrrrrrrrrrrrrrrrrrrrrrr    */
+
+
+
+
+
+@media (max-width: 1200px) {
+    html {
+      font-size: 55%;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .header {
+      padding: 2rem 3%;
+    }
+    section {
+      padding: 10rem 3% 2rem;
+    }
+    .education,
+    .portfolio {
+      padding-bottom: 7rem;
+    }
+    .contact {
+      min-height: auto;
+    }
+    .contact form .input-box input {
+      width: 100%;
+    }
+    .footer {
+      padding: 1rem 3%;
+      flex-direction: column-reverse;
+    }
+    .footer p {
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #menu-icon {
+      display: block;
+    }
+    .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 1rem 3%;
+      background: var(--bg-color);
+      border-top: .1rem solid rgba(0, 0, 0, .2);
+      box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+      display: none;
+    }
+    .navbar.active {
+      display: block;
+    }
+    .navbar a {
+      display: block;
+      font-size: 2rem;
+      margin: 3rem 0;
+    }
+    .home {
+      flex-direction: column;
+    }
+    .home-content h3 {
+      font-size: 2.6rem;
+    }
+    .home-content h1 {
+      font-size: 5rem;
+    }
+    .home-img img {
+      width: 70vw;
+      margin-top: 4rem;
+    }
+    .about {
+      flex-direction: column-reverse;
+    }
+    .about img {
+      width: 70vw;
+      margin-top: 4rem;
+    }
+    .education h2,
+    .portfolio h2 {
+      margin-bottom: 3rem;
+    }
+    .portfolio-container {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 617px) {
+    .portfolio-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    html {
+      font-size: 50%;
+    }
+    .home-content h1 {
+      font-size: 4rem;
+    }
+    .home-content h3 {
+      font-size: 2rem;
+    }
+    .about-content h2 {
+      font-size: 2.8rem;
+    }
+    .about-content h3 {
+      font-size: 2.2rem;
+    }
+    .education-box h3 {
+      font-size: 2.2rem;
+    }
+    .education-box div {
+      font-size: 1.4rem;
+    }
+    .portfolio-box .portfolio-layer h4 {
+      font-size: 2.4rem;
+    }
+    .portfolio-box .portfolio-layer p {
+      font-size: 1.4rem;
+    }
+  }
+  
+  @media (max-width: 365px) {
+    .home-img img,
+    .about-img img {
+      width: 90vw;
+    }
+    .btn {
+      padding: 0.8rem 2rem;
+      font-size: 1.6rem;
+    }
+  }
+  
 
 
 
