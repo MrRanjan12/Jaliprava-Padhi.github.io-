@@ -410,6 +410,9 @@ img {
     #menu-icon {
       display: block;
     }
+    .progress-bar{
+      width:100%;
+    }
     .navbar {
       position: absolute;
       top: 100%;
